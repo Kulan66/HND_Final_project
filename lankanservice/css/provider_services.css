@@ -1,0 +1,148 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Ensure header and footer remain full width */
+header {
+    width: 100%;
+    background-color: #0d2b49;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Center the form between header and footer */
+.content-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Form styling */
+.form-signin {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Form headings */
+.form-signin h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form controls styling */
+.form-control, 
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+}
+
+.form-control:focus, 
+.form-select:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* File input field */
+#serviceimage {
+    border: 1px dashed #ced4da;
+    padding: 10px;
+}
+
+#serviceimage:focus {
+    border-color: #80bdff;
+    box-shadow: none;
+}
+
+/* Textarea styling */
+textarea {
+    resize: none;
+}
+
+/* Card for Service Description */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Center the submit button */
+button[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-signin {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .form-control,
+    .form-select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+    }
+}

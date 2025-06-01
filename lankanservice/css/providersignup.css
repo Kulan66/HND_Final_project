@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Soft gradient background */
+    font-family: 'Arial', sans-serif; /* Font for the page */
+}
+
+.form-signin {
+    max-width: 400px; /* Set max width for the form */
+    margin: 100px auto; /* Center the form with some top margin */
+    padding: 40px; /* Increased padding around the form for more space */
+    background-color: #ffffff; /* White background for form */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.form-signin:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.form-signin img {
+    display: block; /* Center the logo */
+    margin: 0 auto 20px; /* Margin for spacing below the logo */
+    width: 100px; /* Set the desired width for the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-size: 2rem; /* Larger heading size */
+    color: #333; /* Darker color for text */
+    text-align: center; /* Centered text */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.form-floating {
+    margin-bottom: 20px; /* Space between input fields */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.form-floating label {
+    display: block; /* Make the label a block element */
+    width: 100%; /* Full width for the label */
+    text-align: left; /* Align label text to the left */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make label text bold */
+}
+
+.form-control {
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 10px; /* Rounded corners for inputs */
+    padding: 15px; /* Padding for inputs */
+    width: 90%; /* Set width for input field to create space on sides */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border color */
+}
+
+.form-control:focus {
+    border-color: #10365e; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+.btn-primary {
+    background-color: #1d5996; /* Bootstrap primary color */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners for buttons */
+    font-size: 1.2rem; /* Increase font size for buttons */
+    padding: 12px; /* Padding for buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    width: 90%; /* Center button and match width of input */
+    margin: 10px auto; /* Center button with margin */
+    display: flex; /* Use flex to align the button in the center */
+    justify-content: center; /* Center the button text */
+    color: white; /* Change button text color to white */
+}
+
+.btn-primary:hover {
+    background-color: #143457; /* Darken on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.text-body-secondary {
+    color: #6c757d; /* Secondary text color */
+}
+
+.text-body-secondary a {
+    color: #3254b3; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make link bold */
+}
+
+.text-body-secondary a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.mt-5, .mt-3, .mb-3 {
+    margin-top: 1.5rem !important; /* Adjust margins */
+}
+
+@media (max-width: 768px) {
+    .form-signin {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Smaller heading size on mobile */
+    }
+}
